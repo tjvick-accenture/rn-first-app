@@ -8,6 +8,10 @@ export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   function addPlant(plantTitle) {
+    if (plantTitle.length === 0) {
+      return;
+    }
+
     setPlants(currentPlants => [
       ...currentPlants,
       {
