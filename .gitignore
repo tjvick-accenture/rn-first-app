@@ -13,5 +13,6 @@ web-report/
 # macOS
 .DS_Store
 
-
+# IDE stuff
 .idea
+.vscode
